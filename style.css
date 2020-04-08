@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Franklin Gothic Medium';
+	font-size:22px;
+}
+
+li{
+	list-style:none;
+}
+
+html{
+	height: 100%;
+	background: white;
+	background: radial-gradient(circle, #fff 24%, #CCE);
+	background-size: cover;
+}
+
+#container{
+	padding-top:30px;
+	width: 400px;
+	text-align: center;
+	height:auto;
+	margin:4px auto;
+	margin-top: 5px;
+}
+
+#calculadora{
+	height: 600px;
+	margin:0 auto;
+	padding:2px;
+	background-color:rgb(126, 55, 192);
+	border-radius: 3px;	
+	margin-top: 10px;
+	margin-bottom: 100px;	
+	padding-top: 8px;
+}
+
+.input-component{
+	height:30px;
+	font-size: 16px;
+	text-align: right;
+	color:#48484D;
+	background-color:#fff;
+	box-shadow: inset -1px -1px 4px 1px #eee;
+	border-radius: 3px;
+	float: right;
+}
+
+.key li{
+	height:30px;
+	font-size: 16px;
+	text-align: right;
+	float: right;
+	width: 86px;
+	border-radius:3px;
+	color:#fff;
+	background-color:rgb(3, 3, 0);
+	cursor:pointer;
+	margin-top: 9px;
+	margin-right: 8px;
+	margin-bottom: 13px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.input-numbers{
+	padding: 4px;
+	margin-top: 9px;
+	margin-right: 8px;
+	margin-bottom: 13px;
+	width: 115px;
+}
+
+.input-fa{
+	padding: 4px;
+	margin-top: 9px;
+	margin-right: 8px;
+	margin-bottom: 13px;
+	width: 60px;
+}
+
+.space{
+	padding: 4px;
+	margin-top: 9px;
+	margin-right: 8px;
+	margin-bottom: 13px;
+	height:30px;
+	width: 60px;
+	float: right;
+}
+
+.interval-display{
+	text-align: center;
+	width: 40px;
+	margin-right: 17.5px;
+	margin-left: 10.5px;
+	margin-top: -17px;
+}
+
+.key li:hover{
+	background-color: #BEF9F0;
+	color: black;
+	transition:0.8s;
+}
+
+.key li:active{
+	box-shadow: 0px 1px 1px 0px #444651;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.output-numbers{
+	padding: 4px;
+	margin-top: 9px;
+	margin-right: 8px;
+	margin-bottom: 13px;
+	width: 105px;
+	height:30px;
+	font-size: 16px;
+	text-align: right;
+	color:#48484D;
+	background-color:rgb(243, 115, 226);
+	box-shadow: inset -1px -1px 4px 1px #eee;
+	border-radius: 3px;
+}
+
+.output-component{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div-result{
+	margin-top: -40px;
+	margin-left: 500px;
+}
+
+.porc{
+	margin-top: -42px;
+	margin-left: 107px;
+}

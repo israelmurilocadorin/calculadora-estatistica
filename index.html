@@ -1,0 +1,121 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora javascript</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<div>
+			<h1>Calcular</h1>
+		</div>
+		<section id="calculadora">
+		<input class="input-fa input-component" type="number" name="fat1" id="fat1" placeholder="fa 1 ">
+		<input class="input-numbers input-component" type="number" name="nt2" id="nt2" placeholder="valor 2 ">
+		<div class="space"></div>
+		<input class="input-numbers input-component" type="number" name="nt1" id="nt1" placeholder="valor 1 ">
+		<input class="input-fa input-component" type="number" name="fat2" id="fat2" placeholder="fa 2 ">
+		<input class="input-numbers input-component" type="number" name="nt4" id="nt4" placeholder="valor 4 ">
+		<div class="space"></div>
+		<input class="input-numbers input-component" type="number" name="nt3" id="nt3" placeholder="valor 3 ">
+		<input class="input-fa input-component" type="number" name="fat3" id="fat3" placeholder="fa 3 ">
+		<input class="input-numbers input-component" type="number" name="nt6" id="nt6" placeholder="valor 6 ">
+		<div class="space"></div>
+		<input class="input-numbers input-component" type="number" name="nt5" id="nt5" placeholder="valor 5 ">
+		<input class="input-fa input-component" type="number" name="fat4" id="fat4" placeholder="fa 4 ">
+		<input class="input-numbers input-component" type="number" name="nt8" id="nt8" placeholder="valor 8 ">
+		<div class="space"></div>
+		<input class="input-numbers input-component" type="number" name="nt7" id="nt7" placeholder="valor 7 ">
+		<input class="input-fa input-component" type="number" name="fat5" id="fat5" placeholder="fa 5 ">
+		<input class="input-numbers input-component" type="number" name="nt10" id="nt10" placeholder="valor 10 ">
+		<div class="space"></div>
+		<input class="input-numbers input-component" type="number" name="nt9" id="nt9" placeholder="valor 9 ">
+		<input class="input-fa input-component" type="number" name="fat6" id="fat6" placeholder="fa 6 ">
+		<input class="input-numbers input-component" type="number" name="nt12" id="nt12" placeholder="valor 12 ">
+		<h2 class="interval input-component interval-display" id="sinal"></h2>
+		<input class="input-numbers input-component" type="number" name="nt11" id="nt11" placeholder="valor 11 ">
+		<input class="input-fa input-component" type="number" name="fat7" id="fat7" placeholder="fa 7 ">
+		<input class="input-numbers input-component" type="number" name="nt14" id="nt14" placeholder="valor 14 ">
+		<div class="space"></div>
+		<input class="input-numbers input-component" type="number" name="nt13" id="nt13" placeholder="valor 13 ">
+		<input class="input-fa input-component" type="number" name="fat8" id="fat8" placeholder="fa 8 ">
+		<input class="input-numbers input-component" type="number" name="nt16" id="nt16" placeholder="valor 16 ">
+		<div class="space"></div>
+		<input class="input-numbers input-component" type="number" name="nt15" id="nt15" placeholder="valor 15 ">
+		<input class="input-fa input-component" type="number" name="fat9" id="fat9" placeholder="fa 9 ">
+		<input class="input-numbers input-component" type="number" name="nt18" id="nt18" placeholder="valor 18 ">
+		<div class="space"></div>
+		<input class="input-numbers input-component" type="number" name="nt17" id="nt17" placeholder="valor 17 ">
+		<input class="input-fa input-component" type="number" name="fat10" id="fat10" placeholder="f 10 ">
+		<input class="input-numbers input-component" type="number" name="nt20" id="nt20" placeholder="valor 20 ">
+		<div class="space"></div>
+		<input class="input-numbers input-component" type="number" name="nt19" id="nt19" placeholder="valor 19 ">
+		<ul class="key">
+			<li type="submit" onclick="calculate()" value="calculate">=</li>
+			<li type="submit" onclick=" document.getElementById('nt1').value = ''
+										document.getElementById('nt2').value = ''
+										document.getElementById('nt3').value = ''
+										document.getElementById('nt4').value = ''
+										document.getElementById('nt5').value = ''
+										document.getElementById('nt6').value = ''
+										document.getElementById('nt7').value = ''
+										document.getElementById('nt8').value = ''
+										document.getElementById('nt9').value = ''
+										document.getElementById('nt10').value = ''
+										document.getElementById('nt11').value = ''
+										document.getElementById('nt12').value = ''
+										document.getElementById('nt13').value = ''
+										document.getElementById('nt14').value = ''
+										document.getElementById('nt15').value = ''
+										document.getElementById('nt16').value = ''
+										document.getElementById('nt17').value = ''
+										document.getElementById('nt18').value = ''
+										document.getElementById('nt19').value = ''
+										document.getElementById('nt20').value = ''
+										
+										document.getElementById('fat1').value = ''
+										document.getElementById('fat2').value = ''
+										document.getElementById('fat3').value = ''
+										document.getElementById('fat4').value = ''
+										document.getElementById('fat5').value = ''
+										document.getElementById('fat6').value = ''
+										document.getElementById('fat7').value = ''
+										document.getElementById('fat8').value = ''
+										document.getElementById('fat9').value = ''
+										document.getElementById('fat10').value = ''
+
+										document.getElementById('sinal').innerHTML = ''
+
+										document.getElementById('resultadoMedia').innerHTML = ''
+										document.getElementById('resultadoMediana').innerHTML = ''
+										document.getElementById('resultadoClasseModal').innerHTML = ''
+										document.getElementById('resultadoModaBruta').innerHTML = ''
+										document.getElementById('resultadoModaCzuber').innerHTML = ''
+										document.getElementById('resultadoDesvioPadrao').innerHTML = ''
+										document.getElementById('resultadoVariancia').innerHTML = ''
+										document.getElementById('resultadoCoeficienteVariacao').innerHTML = ''
+
+										document.getElementById('result').innerHTML = '' " value="clear">c</li>
+			<li type="submit" onclick="intervalLeft()" value="intervalLeft">|-</li>
+			<li type="submit" onclick="intervalRight()" value="intervalRight">-|</li>
+		</ul>
+	</div>
+	<div class="div-result">
+		<h2 class="output-component">Média<h2></h2>
+		<h2 class="output-numbers" id="resultadoMedia"></h2>
+		<h2 class="output-component">Mediana<h2></h2>	
+		<h2 class="output-numbers" id="resultadoMediana"></h2>
+		<h2 class="output-component">Classe modal<h2></h2>
+		<h2 class="output-numbers" id="resultadoClasseModal"></h2>
+		<h2 class="output-component">Moda Bruta<h2></h2>	
+		<h2 class="output-numbers" id="resultadoModaBruta"></h2>
+		<h2 class="output-component">Moda Czuber<h2></h2>
+		<h2 class="output-numbers" id="resultadoModaCzuber"></h2>
+		<h2 class="output-component">Desvio padrão<h2></h2>	
+		<h2 class="output-numbers" id="resultadoDesvioPadrao"></h2>
+		<h2 class="output-component">Variância<h2></h2>
+		<h2 class="output-numbers" id="resultadoVariancia"></h2>
+		<h2 class="output-component">Coef. variação<h2></h2>	
+		<h2 class="output-numbers" id="resultadoCoeficienteVariacao"></h2><h2 class="output-component porc">%</h2>
+	</div>
+	<script type="text/javascript" src="calc.js"></script>	
+</body>
